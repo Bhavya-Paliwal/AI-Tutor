@@ -1,0 +1,70 @@
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\appsettings.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.staticwebassets.endpoints.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.exe
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.deps.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.runtimeconfig.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.pdb
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.csproj.AssemblyReference.cache
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.AssemblyInfoInputs.cache
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.AssemblyInfo.cs
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.csproj.CoreCompileInputs.cache
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\scopedcss\bundle\LMS-Tutor.styles.css
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.csproj.Up2Date
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\refint\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.pdb
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.genruntimeconfig.cache
+C:\Users\BhavyaPaliwal\RiderProjects\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\ref\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\appsettings.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.staticwebassets.endpoints.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.exe
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.deps.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.runtimeconfig.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\LMS-Tutor.pdb
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.csproj.AssemblyReference.cache
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.AssemblyInfoInputs.cache
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.AssemblyInfo.cs
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.csproj.CoreCompileInputs.cache
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\scopedcss\bundle\LMS-Tutor.styles.css
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.csproj.Up2Date
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\refint\LMS-Tutor.dll
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.pdb
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\LMS-Tutor.genruntimeconfig.cache
+C:\Users\BhavyaPaliwal\OneDrive - Kadel Labs Private Limited\Desktop\LMS-Tutor\LMS-Tutor\obj\Debug\net9.0\ref\LMS-Tutor.dll
