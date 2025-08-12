@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Bot, User } from 'lucide-react';
+import { MessageCircle, X, Send, Bot, User, Square } from 'lucide-react';
 import { getApiUrl } from './config';
 import './App.css';
 
@@ -23,8 +23,10 @@ function App() {
   ]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isStreaming, setIsStreaming] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const streamingControlRef = useRef<{ shouldStop: boolean }>({ shouldStop: false });
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -40,6 +42,17 @@ function App() {
     }
   }, [isChatOpen]);
 
+  const stopStreaming = () => {
+    streamingControlRef.current.shouldStop = true;
+    setIsStreaming(false);
+    setIsLoading(false);
+    
+    // Mark any streaming messages as complete
+    setMessages(prev => prev.map(msg => 
+      msg.isStreaming ? { ...msg, isStreaming: false } : msg
+    ));
+  };
+
   const handleSendMessage = async () => {
     if (!inputText.trim() || isLoading) return;
 
@@ -53,6 +66,8 @@ function App() {
     setMessages(prev => [...prev, userMessage]);
     setInputText('');
     setIsLoading(true);
+    setIsStreaming(false);
+    streamingControlRef.current.shouldStop = false;
 
     // Add a streaming bot message
     const botMessageId = (Date.now() + 1).toString();
@@ -69,7 +84,6 @@ function App() {
     try {
       // Call your .NET Web API
       const apiUrl = getApiUrl('/api/Tutor/ask');
-      // Try different request formats - your backend might expect different field names
       const requestBody = {
         message: inputText,
         question: inputText,
@@ -106,6 +120,11 @@ function App() {
         const jsonResponse = await response.json();
         console.log('JSON Response:', jsonResponse);
         
+        // Check if user stopped before processing
+        if (streamingControlRef.current.shouldStop) {
+          return;
+        }
+        
         // Try different possible response formats
         let answer = '';
         if (jsonResponse.answer) {
@@ -124,33 +143,42 @@ function App() {
         
         console.log('Extracted answer:', answer);
         
-                 // Format the response for better display
-         const formatResponse = (text: string) => {
-           return text
-             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold text
-             .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic text
-             .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>') // Code blocks
-             .replace(/`([^`]+)`/g, '<code>$1</code>') // Inline code
-             .replace(/\n/g, '<br>'); // Line breaks
-         };
-         
-         const formattedAnswer = formatResponse(answer);
-         
-         // Simulate streaming by updating the message character by character
-         let displayText = '';
-         for (let i = 0; i < answer.length; i++) {
-           displayText += answer[i];
-           const formattedText = formatResponse(displayText);
-           setMessages(prev => prev.map(msg => 
-             msg.id === botMessageId 
-               ? { ...msg, text: formattedText }
-               : msg
-           ));
-           // Add a small delay to simulate streaming
-           await new Promise(resolve => setTimeout(resolve, 20));
-         }
+        // Format the response for better display
+        const formatResponse = (text: string) => {
+          return text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold text
+            .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic text
+            .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>') // Code blocks
+            .replace(/`([^`]+)`/g, '<code>$1</code>') // Inline code
+            .replace(/\n/g, '<br>'); // Line breaks
+        };
+        
+        setIsStreaming(true);
+        setIsLoading(false);
+        
+        // Simulate streaming by updating the message character by character
+        let displayText = '';
+        for (let i = 0; i < answer.length; i++) {
+          // Check if user clicked stop
+          if (streamingControlRef.current.shouldStop) {
+            break;
+          }
+          
+          displayText += answer[i];
+          const formattedText = formatResponse(displayText);
+          setMessages(prev => prev.map(msg => 
+            msg.id === botMessageId 
+              ? { ...msg, text: formattedText }
+              : msg
+          ));
+          // Add a small delay to simulate streaming
+          await new Promise(resolve => setTimeout(resolve, 20));
+        }
       } else {
-        // Handle streaming response
+        // Handle actual streaming response
+        setIsStreaming(true);
+        setIsLoading(false);
+        
         const reader = response.body?.getReader();
         if (!reader) {
           throw new Error('No response body');
@@ -159,6 +187,12 @@ function App() {
         let accumulatedText = '';
         
         while (true) {
+          // Check if user clicked stop
+          if (streamingControlRef.current.shouldStop) {
+            reader.cancel();
+            break;
+          }
+          
           const { done, value } = await reader.read();
           
           if (done) break;
@@ -175,12 +209,14 @@ function App() {
         }
       }
 
-      // Mark streaming as complete
-      setMessages(prev => prev.map(msg => 
-        msg.id === botMessageId 
-          ? { ...msg, isStreaming: false }
-          : msg
-      ));
+      // Mark streaming as complete (only if not stopped by user)
+      if (!streamingControlRef.current.shouldStop) {
+        setMessages(prev => prev.map(msg => 
+          msg.id === botMessageId 
+            ? { ...msg, isStreaming: false }
+            : msg
+        ));
+      }
 
     } catch (error) {
       console.error('Error:', error);
@@ -191,6 +227,7 @@ function App() {
           : msg
       ));
     } finally {
+      setIsStreaming(false);
       setIsLoading(false);
     }
   };
@@ -234,11 +271,11 @@ function App() {
                 {message.sender === 'user' ? <User size={16} /> : <Bot size={16} />}
               </div>
               <div className="message-content">
-                                 <div 
-                   className="message-text"
-                   dangerouslySetInnerHTML={{ __html: message.text }}
-                 />
-                 {message.isStreaming && <span className="typing-indicator">▋</span>}
+                <div 
+                  className="message-text"
+                  dangerouslySetInnerHTML={{ __html: message.text }}
+                />
+                {message.isStreaming && <span className="typing-indicator">▋</span>}
                 <div className="message-time">
                   {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                 </div>
@@ -257,16 +294,27 @@ function App() {
             onChange={(e) => setInputText(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Type your question..."
-            disabled={isLoading}
+            disabled={isLoading || isStreaming}
             className="chat-input"
           />
-          <button 
-            onClick={handleSendMessage}
-            disabled={!inputText.trim() || isLoading}
-            className="send-button"
-          >
-            <Send size={18} />
-          </button>
+          
+          {/* Conditional rendering: Show stop button when streaming, send button otherwise */}
+          {isStreaming ? (
+            <button 
+              onClick={stopStreaming}
+               className="send-button"
+            >
+              Stop
+            </button>
+          ) : (
+            <button 
+              onClick={handleSendMessage}
+              disabled={!inputText.trim() || isLoading}
+              className="send-button"
+            >
+              <Send size={18} />
+            </button>
+          )}
         </div>
       </div>
 
@@ -281,4 +329,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
